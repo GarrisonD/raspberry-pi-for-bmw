@@ -36,3 +36,19 @@ This DIY guide makes sense if you **already** have an idle Raspberry Pi or you'r
 - **(Optional)** Raspberry Pi case and fan.
 
   _It's optional since it's purely for your convenience. In the case of Pi 4, I would go with official ones, especially considering that official ones cost the same or even less than custom ones._
+
+## 1. Install Raspberry Pi OS to a microSD card
+
+Download Raspberry Pi Imager from [raspberrypi.org](https://www.raspberrypi.org/software/), install it on your computer, and run.
+
+Choose `Raspberry Pi OS Lite` for `Operating System` and your microSD card for `Storage`.
+
+Press `CTRL + SHIFT + X` to show `Advanced options`.
+
+- Enable SSH and select an authentication method.
+
+  _If you don't know how to use public-key authentication, go with a password._
+
+- Configure Wi-Fi and locale settings.
+
+Click on `Write` and wait for the flashing process to finish.
