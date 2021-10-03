@@ -51,4 +51,6 @@ Press `CTRL + SHIFT + X` to show `Advanced options`.
 
 - Configure Wi-Fi and locale settings.
 
+  _**WARNING!** Not all Raspberry Pi's (e.g., Pi 3 Model B) support 5 GHz band._
+
 Click on `Write` and wait for the flashing process to finish.
