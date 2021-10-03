@@ -97,3 +97,32 @@ I prefer using public-key authentication not to enter the password all the time,
 Host raspberrypi.local
     IdentityFile ~/.ssh/raspberry-pi-4
 ```
+
+## 4. Tweaking SSH server on a Raspberry Pi
+
+In Linux, a lot of things are done with the help of the Perl programming language. You can face harmless but very annoying warning messages connected to locale, e.g.:
+
+```
+pi@raspberrypi:~ $ perl
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+        LANGUAGE = (unset),
+        LC_ALL = (unset),
+        LC_CTYPE = "en_US.UTF-8",
+        LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+```
+
+To get rid of it, comment out the line in `/etc/ssh/sshd_config`:
+
+```
+AcceptEnv LANG LC_*
+```
+
+And to apply changes, re-connect after running:
+
+```sh
+sudo systemctl reload ssh
+```
