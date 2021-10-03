@@ -65,11 +65,17 @@ Power up a Raspberry Pi and wait. The first launch is always more extended (~1.5
 
 ## 3. Connecting to a Raspberry Pi
 
-Connect to a running Pi using SSH client with:
+On Linux or macOS, connect to a running Pi via SSH client with a command:
 
 ```sh
 ssh pi@raspberrypi.local
 ```
+
+On Windows, you have at least two options:
+
+1. Download, install and use [PuTTY](https://www.putty.org/) client
+
+2. Install [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) (Linux based OS) on [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) and use its command line
 
 You can face an issue with resolving mDNS here if you are using an out-of-date Windows 10. You can try to update it, but the quick-and-easy solution is to use a Pi's IP address instead of `raspberrypi.local`. There are at least two ways where you can find it:
 
