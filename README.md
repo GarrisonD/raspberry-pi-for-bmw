@@ -54,3 +54,40 @@ Press `CTRL + SHIFT + X` to show `Advanced options`.
   _**WARNING!** Not all Raspberry Pi's (e.g., Pi 3 Model B) support 5 GHz band._
 
 Click on `Write` and wait for the flashing process to finish.
+
+## 2. The first Raspberry Pi launch
+
+Insert a microSD card into a powered-off Raspberry Pi.
+
+If you have an HDMI to micro-HDMI cable, connect your Raspberry Pi to a display to read the logs - it will help debug if you face some issues.
+
+Power up a Raspberry Pi and wait. The first launch is always more extended (~1.5 minutes in my case) than subsequent ones (~30 seconds in my case) due to a microSD repartitioning and multiple reboots.
+
+## 3. Connecting to a Raspberry Pi
+
+Connect to a running Pi using SSH client with:
+
+```sh
+ssh pi@raspberrypi.local
+```
+
+You can face an issue with resolving mDNS here if you are using an out-of-date Windows 10. You can try to update it, but the quick-and-easy solution is to use a Pi's IP address instead of `raspberrypi.local`. There are at least two ways where you can find it:
+
+1. Connect to a router admin panel and look for a list of all the connected devices.
+
+   _In the case of a router for geeks (e.g., MikroTik) look for a DHCP server and leases._
+
+2. Connect a Pi to a display, and at the end of the logs you will find:
+
+   ```
+   My IP adress is XXX.XXX.XXX.XXX
+   ```
+
+I prefer using public-key authentication not to enter the password all the time, especially when a password is long and/or contains special symbols. Also, I don't particularly appreciate reusing SSH keys, so I have a standalone SSH key to log in to a Pi and for nothing else. Such an approach requires some changes to `~/.ssh/config`:
+
+```
+...
+
+Host raspberrypi.local
+    IdentityFile ~/.ssh/raspberry-pi-4
+```
