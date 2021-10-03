@@ -37,7 +37,7 @@ This DIY guide makes sense if you **already** have an idle Raspberry Pi or you'r
 
   _It's optional since it's purely for your convenience. In the case of Pi 4, I would go with official ones, especially considering that official ones cost the same or even less than custom ones._
 
-## 1. Install Raspberry Pi OS to a microSD card
+## 1. Installing Raspberry Pi OS to a microSD card
 
 Download Raspberry Pi Imager from [raspberrypi.org](https://www.raspberrypi.org/software/), install it on your computer, and run.
 
