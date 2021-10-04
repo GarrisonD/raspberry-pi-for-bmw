@@ -126,3 +126,14 @@ And to apply changes, re-connect after running:
 ```sh
 sudo systemctl reload ssh
 ```
+
+## 5. Upgrading Raspberry Pi software
+
+To upgrade all the installed packages to the latest versions, connect to a Pi via SSH and run:
+
+```sh
+sudo apt update
+sudo apt full-upgrade -y
+sudo apt autoremove -y
+sudo reboot
+```
