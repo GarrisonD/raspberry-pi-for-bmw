@@ -1,0 +1,9 @@
+Oct 20 00:44:02 raspberrypi hostapd: wlan0: STA 3a:d0:6d:04:e8:dd IEEE 802.11: associated
+Oct 20 00:44:02 raspberrypi hostapd: wlan0: STA 3a:d0:6d:04:e8:dd RADIUS: starting accounting session 08A701BB23DF3D92
+Oct 20 00:44:02 raspberrypi hostapd: wlan0: STA 3a:d0:6d:04:e8:dd WPA: pairwise key handshake completed (RSN)
+Oct 20 00:44:05 raspberrypi dnsmasq-dhcp[525]: DHCPDISCOVER(br0) 3a:d0:6d:04:e8:dd
+Oct 20 00:44:05 raspberrypi dnsmasq-dhcp[525]: DHCPOFFER(br0) 192.168.4.3 3a:d0:6d:04:e8:dd
+Oct 20 00:44:05 raspberrypi dnsmasq-dhcp[525]: DHCPDISCOVER(br0) 3a:d0:6d:04:e8:dd
+Oct 20 00:44:05 raspberrypi dnsmasq-dhcp[525]: DHCPOFFER(br0) 192.168.4.3 3a:d0:6d:04:e8:dd
+Oct 20 00:44:06 raspberrypi dnsmasq-dhcp[525]: DHCPREQUEST(br0) 192.168.4.3 3a:d0:6d:04:e8:dd
+Oct 20 00:44:06 raspberrypi dnsmasq-dhcp[525]: DHCPACK(br0) 192.168.4.3 3a:d0:6d:04:e8:dd iPad

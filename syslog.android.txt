@@ -1,0 +1,18 @@
+Oct 20 00:45:13 raspberrypi hostapd: wlan0: STA 6e:b8:09:c0:5e:3c IEEE 802.11: associated
+Oct 20 00:45:13 raspberrypi hostapd: wlan0: STA 6e:b8:09:c0:5e:3c RADIUS: starting accounting session 218491C93D10BDFC
+Oct 20 00:45:13 raspberrypi hostapd: wlan0: STA 6e:b8:09:c0:5e:3c WPA: pairwise key handshake completed (RSN)
+Oct 20 00:45:13 raspberrypi dnsmasq-dhcp[525]: DHCPDISCOVER(br0) 6e:b8:09:c0:5e:3c
+Oct 20 00:45:13 raspberrypi dnsmasq-dhcp[525]: DHCPOFFER(br0) 192.168.4.2 6e:b8:09:c0:5e:3c
+Oct 20 00:45:13 raspberrypi dnsmasq-dhcp[525]: DHCPREQUEST(br0) 192.168.4.2 6e:b8:09:c0:5e:3c
+Oct 20 00:45:13 raspberrypi dnsmasq-dhcp[525]: DHCPACK(br0) 192.168.4.2 6e:b8:09:c0:5e:3c OnePlus-6T
+Oct 20 00:45:14 raspberrypi dhcpcd[509]: br0: hardware address 6e:b8:09:c0:5e:3c claims 192.168.4.1
+Oct 20 00:45:14 raspberrypi dhcpcd[509]: br0: hardware address 6e:b8:09:c0:5e:3c claims 192.168.4.1
+Oct 20 00:45:14 raspberrypi dhcpcd[509]: br0: 10 second defence failed for 192.168.4.1
+Oct 20 00:45:14 raspberrypi avahi-daemon[373]: Withdrawing address record for 192.168.4.1 on br0.
+Oct 20 00:45:14 raspberrypi avahi-daemon[373]: Leaving mDNS multicast group on interface br0.IPv4 with address 192.168.4.1.
+Oct 20 00:45:14 raspberrypi systemd-timesyncd[318]: Network configuration changed, trying to establish connection.
+Oct 20 00:45:14 raspberrypi avahi-daemon[373]: Interface br0.IPv4 no longer relevant for mDNS.
+Oct 20 00:45:14 raspberrypi dhcpcd[509]: br0: deleting route to 192.168.4.0/24
+Oct 20 00:45:14 raspberrypi dhcpcd[509]: br0: probing address 192.168.4.1/24
+Oct 20 00:45:14 raspberrypi dhcpcd[509]: br0: hardware address 6e:b8:09:c0:5e:3c claims 192.168.4.1
+Oct 20 00:45:14 raspberrypi dhcpcd[509]: br0: DAD detected 192.168.4.1
